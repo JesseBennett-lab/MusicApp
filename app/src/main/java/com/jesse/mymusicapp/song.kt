@@ -9,6 +9,7 @@ class song(songName:String, songArtist:String, songYear:Int, songDuration:String
     var year : Int=0
     var duration : String =""
 
+    //initializing the variables/ attributes for the song objects-----------------------------------
     init{
          name = songName
          artist = songArtist
