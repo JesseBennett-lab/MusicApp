@@ -50,7 +50,7 @@ class song(songName:String, songArtist:String, songYear:Int, songDuration:String
     fun DisplaySongs(): String{
 
         return "$name, $artist, $year,( $duration")
-        
+
 
     }
 }
