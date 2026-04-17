@@ -9,6 +9,11 @@ class song(songName:String, songArtist:String, songYear:Int, songDuration:String
     var year : Int=0
     var duration : String =""
 
+    constructor(songName:String,songArtist:String) : this(songName, songArtist,0,""){
+
+
+            }
+
     //initializing the variables/ attributes for the song objects-----------------------------------
     init{
          name = songName
@@ -37,9 +42,15 @@ class song(songName:String, songArtist:String, songYear:Int, songDuration:String
     }
     //Function  to favorite a song------------------------------------------------------------------
     fun Favorite():Boolean{
+        return true
         Log.v("Song", "$name is favorited now")
 
 
     }
+    fun DisplaySongs(): String{
 
+        return "$name, $artist, $year,( $duration")
+        
+
+    }
 }
