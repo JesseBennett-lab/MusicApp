@@ -2,17 +2,19 @@ package com.jesse.mymusicapp
 
 import android.util.Log
 
-class song(songName:String, songArtist:String, songYear:Int, songDuration:String) {
+class song(songName: String, songArtist: String, songYear: Int, songDuration: String) {
 
     var name :String =""
     var artist : String =""
-    var year : Int=0
+    var year : Int = 0
     var duration : String =""
 
-    constructor(songName:String,songArtist:String) : this(songName, songArtist,0,""){
+    constructor(songName:String,songArtist:String) : this(songName, songArtist,0 ,"") {
+    }
+    constructor(songName:String) : this(songName, songArtist="Unknown Artist",songYear=0, songDuration="") {
+    }
 
 
-            }
 
     //initializing the variables/ attributes for the song objects-----------------------------------
     init{
@@ -49,7 +51,7 @@ class song(songName:String, songArtist:String, songYear:Int, songDuration:String
     }
     fun DisplaySongs(): String{
 
-        return "$name, $artist, $year,( $duration")
+        return "$name, $artist, $year, $duration"
 
 
     }
